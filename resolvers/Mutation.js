@@ -1,8 +1,5 @@
 const { authorizeWithGithub } = require("../lib.js");
-const { photos } = require("../dataset.js");
 const { default: fetch } = require("node-fetch");
-
-let _id = 0;
 
 module.exports = {
   async postPhoto(parent, args, { db, currentUser }) {
